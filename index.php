@@ -4,34 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
     <title>Desafio</title>
 </head>
 <body>
-    <pre>
-    <?php
-    require_once "gerador.php";
-    // var_dump($people);
-    echo "{$people[45]->getAddress()->getStreet()}";
-    $person45 = $people[45];
-    $addressPerson45 = $person45->getAddress();
-    $streetPerson45 = $addressPerson45->getStreet();
-    
-    // require_once "Address.php";
-    // require_once "Person.php";
-
-    // $name = "Mateus";
-    // $age = 23;
-    // $gender = "Masculino";
-    // $foods = ["Pizza", "Batata Frita", "Hamburger", "Bolo"];
-    // $street = "Rua Guaçui";
-    // $number = 496;
-    // $city = "Juiz de Fora";
-    // $state = "Minas Gerais";
-    // $address = new Address($street,$number,$city,$state);
-    // $person = new Person($name,$age,$gender,$foods,$address);
-    // var_dump($person);
-    ?>
-    </pre>
-    
+    <form action=""> 
+        <label for="name">Nome: </label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Idade: </label><br>
+        <input type="text" id="age" age="age"><br>
+        <input type="radio" id="feminino" name="gender" value="Feminino">
+        <label for="html">Feminino</label><br>
+        <input type="radio" id="masculino" name="gender" value="Masculino">
+        <label for="css">Masculino</label><br>
+        <input type="radio" id="não informar" name="gender" value="Não informar">
+        <label for="javascript">Não informar</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>

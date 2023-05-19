@@ -54,7 +54,7 @@ class Person
 
     public function setPassword(string $password)
     {
-        $this->password = password_hash($password, PASSWORD_DEFAULT);
+        $this->password = $password;
     }
 
     public function getFavoriteFoods() : array
