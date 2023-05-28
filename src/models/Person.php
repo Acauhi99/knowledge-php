@@ -12,7 +12,7 @@ class Person
     private Address $address;
 
 
-    public function __construct(int $id=0, string $name, string $email, string $password, int $age, string $gender, array $foods, Address $address)
+    public function __construct(string $name, string $email, string $password, int $age, string $gender, array $foods, Address $address, int $id=0)
     {
         $this->setAge($age);
         $this->setGender($gender);

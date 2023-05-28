@@ -10,9 +10,9 @@
 </head>
 <body>
     <form action=""> 
-        <label for="email">email:</label><br>
+        <label for="email">Email:</label><br>
         <input type="text" id="email" name="email"><br>
-        <label for="password">password:</label><br>
+        <label for="password">Password:</label><br>
         <input type="text" id="password" name="password"><br>
         <input type="radio" id="admin" name="role" value="admin">
         <label for="admin">Admin</label><br>

@@ -15,6 +15,10 @@
 <form action="cadastro.php" method="POST">
         <label for="name">Nome:</label><br>
         <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
         <label for="age">Idade:</label><br>
         <input type="text" id="age" name="age"><br>
         <label>Gênero:</label><br>
@@ -26,7 +30,12 @@
         <label for="naoInformado">Não informar</label><br><br>
 
         <label for="favoritefoods">Comidas favoritas:</label><br>
-        <textarea name="favoritefoods" rows="10" cols="30"></textarea><br>
+        <input type="checkbox" id="hamburguer" name="food[]" value="hamburguer">
+        <label for="hamburguer"> Hamburguer</label><br>
+        <input type="checkbox" id="pizza" name="food[]" value="pizza">
+        <label for="pizza"> Pizza</label><br>
+        <input type="checkbox" id="japones" name="food[]" value="japones">
+        <label for="japones"> Japones</label><br><br>
         <label for="street">Rua:</label><br>
         <input type="text" id="street" name="street"><br>
         <label for="number">Número:</label><br>
@@ -34,7 +43,36 @@
         <label for="city">Cidade:</label><br>
         <input type="text" id="city" name="city"><br>
         <label for="state">Estado:</label><br>
-        <input type="text" id="state" name="state"><br>
+        <select id="state" name="state">
+            <option value="">Selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select><br><br>
     <input type="submit" value="Enviar">
 </form>
 </body>

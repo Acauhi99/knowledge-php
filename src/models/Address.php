@@ -9,7 +9,7 @@ class Address
     private string $state;
 
 
-    public function __construct(int $id=0, string $street, int $number, string $city, string $state)
+    public function __construct(string $street, int $number, string $city, string $state, int $id=0)
     {
         $this->setStreet($street);
         $this->setNumber($number);
